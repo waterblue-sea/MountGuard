@@ -96,17 +96,5 @@ grep -E "adb" /proc/1/mountinfo
 
 ---
 
-## 📦 目录结构与自行打包
-
-如果你想直接打包本仓库源码：
-```text
-MountGuard/
-├── module.prop       # 模块基础信息
-├── common_func.sh    # VFS 挂载表扫描、消杀与 private 隔离核心逻辑
-├── service.sh        # 启动自愈与 5s/15s/30s 延迟巡检守护
-└── action.sh         # 管理器【执行】按钮交互（支持在线热修复与音量+安全软重启）
-```
-将上述 4 个文件直接（不带外层文件夹）压缩为 `.zip`，即可在 KernelSU / APatch 管理器中刷入。
-
 ## 📄 License
 MIT License. 欢迎自由分发、修改或集成进你的提权激活脚本中，让更多折腾临时 Root 的朋友少走弯路！
