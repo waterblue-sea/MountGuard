@@ -1,0 +1,6 @@
+id=mount_guard
+name=Recover temporary root
+version=v1.0
+versionCode=100
+author=Wasser
+description=Mount self-healing and secure software restart.
