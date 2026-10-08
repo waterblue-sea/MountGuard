@@ -26,7 +26,6 @@ if [ "$KEY" = "UP" ]; then
     . /data/adb/modules/mount_guard/common_func.sh
     sanitize_mounts
     (
-      # 软重启后重拉各活跃模块的 service.sh 并执行多轮挂载消杀
       sleep 5
       for m in /data/adb/modules/*; do
         [ ! -d "$m" ] || [ -f "$m/disable" ] || [ -f "$m/remove" ] && continue
