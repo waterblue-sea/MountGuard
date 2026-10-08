@@ -10,7 +10,6 @@ echo "  [音量+] : 立即执行【安全软重启】(激活模块并重拉守�
 echo "  [音量-] 或不按键等待 4 秒 : 仅完成热修复并退出"
 echo "-----------------------------------------"
 
-# 过滤触摸屏抬手事件，仅监听真实的音量键按下事件
 detect_volume_key() {
   timeout 4 getevent -ql 2>/dev/null | while read -r line; do
     case "$line" in
