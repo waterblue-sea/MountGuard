@@ -1,4 +1,5 @@
 #!/system/bin/sh
+
 commit_pending_modules() {
   if [ -d "/data/adb/modules_update" ]; then
     for upd in /data/adb/modules_update/*; do
